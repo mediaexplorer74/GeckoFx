@@ -1,0 +1,227 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="12.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProductVersion>8.0.30703</ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{D7ADC901-E1C4-480E-8F6D-B1FFD5CF87E8}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>Gecko</RootNamespace>
+    <FileAlignment>512</FileAlignment>
+    <TargetFrameworkVersion>v4.8</TargetFrameworkVersion>
+    <AssemblyName>Geckofx-Winforms</AssemblyName>
+    <AllowUnsafeBlocks>true</AllowUnsafeBlocks>
+    <WarningLevel>4</WarningLevel>
+    <SignAssembly>true</SignAssembly>
+    <AssemblyOriginatorKeyFile>GeckoFX.snk</AssemblyOriginatorKeyFile>
+    <TargetFrameworkProfile />
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <Prefer32Bit>false</Prefer32Bit>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <Prefer32Bit>false</Prefer32Bit>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug_Linux|x86' ">
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\x86\Debug_Linux</OutputPath>
+    <DefineConstants>DEBUG;TRACE;GTK</DefineConstants>
+    <PlatformTarget>x86</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <CheckForOverflowUnderflow>true</CheckForOverflowUnderflow>
+    <Prefer32Bit>false</Prefer32Bit>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug_Linux|AnyCPU' ">
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug_Linux</OutputPath>
+    <DefineConstants>DEBUG;TRACE;GTK</DefineConstants>
+    <DebugSymbols>true</DebugSymbols>
+    <Prefer32Bit>false</Prefer32Bit>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|x86' ">
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <DebugSymbols>true</DebugSymbols>
+    <Prefer32Bit>false</Prefer32Bit>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|x86' ">
+    <DebugType>none</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <PlatformTarget>x86</PlatformTarget>
+    <Prefer32Bit>false</Prefer32Bit>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release_Linux|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release_Linux</OutputPath>
+    <DefineConstants>TRACE;GTK</DefineConstants>
+    <Prefer32Bit>false</Prefer32Bit>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release_Linux|x86' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\x86\Release_Linux</OutputPath>
+    <DefineConstants>TRACE;GTK</DefineConstants>
+    <PlatformTarget>x86</PlatformTarget>
+    <Prefer32Bit>false</Prefer32Bit>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Dialogs\ChromeDialog.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Dialogs\ChromeDialog.Designer.cs">
+      <DependentUpon>ChromeDialog.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Dialogs\ConfirmDialog.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Dialogs\ConfirmDialog.Designer.cs">
+      <DependentUpon>ConfirmDialog.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Dialogs\GeckoHelperAppLauncherDialog.cs" />
+    <Compile Include="DOM\GeckoElementExtensionMethods.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="GeckoWebBrowser.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="GeckoWebBrowser.Events.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="GeckoWebBrowser.XULWindow.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Linux\OffScreenGeckoWebBrowser.cs" />
+    <Compile Include="Linux\GeckoWebBrowser.GTK.cs" />
+    <Compile Include="GeckoWebBrowser.WinForms.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Linux\GtkReparentingWrapperNoThread.cs" />
+    <Compile Include="Linux\GtkWrapperNoThread.cs" />
+    <Compile Include="Interop\nsWeakReference.cs" />
+    <Compile Include="NavigateFinishedNotifier.cs" />
+    <Compile Include="Dialogs\PasswordDialog.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Dialogs\PasswordDialog.Designer.cs">
+      <DependentUpon>PasswordDialog.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Dialogs\PromptDialog.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Dialogs\PromptDialog.Designer.cs">
+      <DependentUpon>PromptDialog.cs</DependentUpon>
+    </Compile>
+    <Compile Include="PropertiesDialog.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="PropertiesDialog.Designer.cs">
+      <DependentUpon>PropertiesDialog.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Utils\SaveImageElement.cs" />
+    <Compile Include="Linux\X11Structs.cs" />
+    <Compile Include="Linux\GtkOnceOnly.cs" />
+    <Compile Include="Utils\WindowsImageCreator.cs" />
+    <Compile Include="Interop\GeckoWebBrowserWeakRef.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="Dialogs\ChromeDialog.resx">
+      <DependentUpon>ChromeDialog.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Dialogs\ConfirmDialog.resx">
+      <DependentUpon>ConfirmDialog.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Dialogs\PasswordDialog.resx">
+      <DependentUpon>PasswordDialog.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Dialogs\PromptDialog.resx">
+      <DependentUpon>PromptDialog.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="PropertiesDialog.resx">
+      <DependentUpon>PropertiesDialog.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="GeckoFX.snk" />
+    <None Include="packages.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\Geckofx-Core\Geckofx-Core.csproj">
+      <Project>{6AB4EEE6-1889-43AB-83F7-A4F083230BE7}</Project>
+      <Name>Geckofx-Core</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets. -->
+  <Target Name="BeforeBuild">
+  </Target>
+  <Import Project="$(MSBuildProjectDirectory)\..\.build\MSBuild.Community.Tasks.targets" />
+  <Target Name="AfterBuild">
+    <CallTarget Targets="AfterBuildWindows" />
+    <CallTarget Targets="AfterBuildLinux" />
+  </Target>
+  <Target Name="AfterBuildLinux" Condition=" '$(OS)' == 'Unix' ">
+    <Exec Command="wget -nc https://dist.nuget.org/win-x86-commandline/latest/nuget.exe" />
+    <Exec Command="mkdir -p Firefox" />
+    <Exec Command="cp -ra ../PutXulRunnerFolderHere/64/Firefox/* Firefox/" />
+    <Exec Command="cp -ra ../PutXulRunnerFolderHere/64/libgeckofix.so Firefox/" />
+    <Exec Command="mono /opt/monodevelop/lib/monodevelop/AddIns/MonoDevelop.PackageManagement/NuGet.exe pack Geckofx-Winforms.64.Linux.nuspec -Prop Configuration=Debug -Prop Version=`monodis --assembly $(TargetDir)\$(TargetName).dll | grep Version | awk '{print $2}'` -Prop FirefoxDir=Firefox -MinClientVersion 2.5" />
+    <Exec Command="rm -rf Firefox" />
+    <Exec Command="mkdir -p Firefox" />
+    <Exec Command="cp -ra ../PutXulRunnerFolderHere/32/Firefox/* Firefox/" />
+    <Exec Command="cp -ra ../PutXulRunnerFolderHere/32/libgeckofix.so Firefox/" />
+    <Exec Command="mono /opt/monodevelop/lib/monodevelop/AddIns/MonoDevelop.PackageManagement/NuGet.exe pack Geckofx-Winforms.32.Linux.nuspec -Prop Configuration=Debug -Prop Version=`monodis --assembly $(TargetDir)\$(TargetName).dll | grep Version | awk '{print $2}'` -Prop FirefoxDir=Firefox -MinClientVersion 2.5" />
+  </Target>
+  <Target Name="AfterBuildWindows" Condition=" '$(OS)' == 'Windows_NT' ">
+    <CallTarget Targets="CopyFirefoxFiles" />
+    <!-- Only download a new copy of nuget.exe if we don't have a copy available -->
+    <WebDownload Condition="!Exists('nuget.exe')" Filename="nuget.exe" FileUri="https://dist.nuget.org/win-x86-commandline/latest/nuget.exe" />
+    <Exec Command="nuget pack Geckofx-Winforms.csproj -Prop Configuration=Debug -Prop Platform=x86 -MinClientVersion 2.5">
+    </Exec>
+  </Target>
+  <Import Project="..\packages\Geckofx45.32.Windows.0.6\build\Geckofx45.32.Windows.targets" Condition="Exists('..\packages\Geckofx45.32.Windows.0.6\build\Geckofx45.32.Windows.targets')" />
+  <Target Name="EnsureNuGetPackageBuildImports" BeforeTargets="PrepareForBuild">
+    <PropertyGroup>
+      <ErrorText>This project references NuGet package(s) that are missing on this computer. Enable NuGet Package Restore to download them.  For more information, see http://go.microsoft.com/fwlink/?LinkID=322105. The missing file is {0}.</ErrorText>
+    </PropertyGroup>
+    <Error Condition="!Exists('..\packages\Geckofx45.32.Windows.0.6\build\Geckofx45.32.Windows.targets')" Text="$([System.String]::Format('$(ErrorText)', '..\packages\Geckofx45.32.Windows.0.6\build\Geckofx45.32.Windows.targets'))" />
+  </Target>
+</Project>

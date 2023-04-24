@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+    <ItemGroup>
+        <Firefox Include="$(MSBuildThisFileDirectory)\..\content\Firefox\*.*" />
+    </ItemGroup>
+	<PropertyGroup>
+	<!-- Copy Firefox files to output dir -->
+	</PropertyGroup>	
+	 <Target Name="CopyFirefoxFiles">
+		<Copy SourceFiles="@(FIREFOX)" DestinationFolder="$(MSBuildProjectDirectory)\..\PutXulRunnerFolderHere\Firefox" SkipUnchangedFiles="true" />
+	</Target>
+</Project>

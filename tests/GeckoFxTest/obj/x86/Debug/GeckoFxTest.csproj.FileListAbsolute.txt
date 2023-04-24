@@ -1,0 +1,14 @@
+C:\Users\Admin\source\repos\geckofx45\GeckoFxTest\bin\x86\Debug\Geckofx-Core.dll.config
+C:\Users\Admin\source\repos\geckofx45\GeckoFxTest\bin\x86\Debug\GeckoFxTest.exe.config
+C:\Users\Admin\source\repos\geckofx45\GeckoFxTest\bin\x86\Debug\GeckoFxTest.exe
+C:\Users\Admin\source\repos\geckofx45\GeckoFxTest\bin\x86\Debug\GeckoFxTest.pdb
+C:\Users\Admin\source\repos\geckofx45\GeckoFxTest\bin\x86\Debug\Geckofx-Core.dll
+C:\Users\Admin\source\repos\geckofx45\GeckoFxTest\bin\x86\Debug\Geckofx-Winforms.dll
+C:\Users\Admin\source\repos\geckofx45\GeckoFxTest\bin\x86\Debug\Geckofx-Core.pdb
+C:\Users\Admin\source\repos\geckofx45\GeckoFxTest\bin\x86\Debug\Geckofx-Winforms.pdb
+C:\Users\Admin\source\repos\geckofx45\GeckoFxTest\obj\x86\Debug\GeckoFxTest.csproj.AssemblyReference.cache
+C:\Users\Admin\source\repos\geckofx45\GeckoFxTest\obj\x86\Debug\GeckoFxTest.csproj.SuggestedBindingRedirects.cache
+C:\Users\Admin\source\repos\geckofx45\GeckoFxTest\obj\x86\Debug\GeckoFxTest.csproj.CoreCompileInputs.cache
+C:\Users\Admin\source\repos\geckofx45\GeckoFxTest\obj\x86\Debug\GeckoFxTest.csproj.CopyComplete
+C:\Users\Admin\source\repos\geckofx45\GeckoFxTest\obj\x86\Debug\GeckoFxTest.exe
+C:\Users\Admin\source\repos\geckofx45\GeckoFxTest\obj\x86\Debug\GeckoFxTest.pdb

@@ -1,0 +1,12 @@
+C:\Users\Admin\source\repos\GeckoFx\src\Geckofx-Wpf\obj\Debug\Geckofx-Wpf.csproj.AssemblyReference.cache
+C:\Users\Admin\source\repos\GeckoFx\src\Geckofx-Wpf\obj\Debug\Gecko.Properties.Resources.resources
+C:\Users\Admin\source\repos\GeckoFx\src\Geckofx-Wpf\obj\Debug\Geckofx-Wpf.csproj.GenerateResource.cache
+C:\Users\Admin\source\repos\GeckoFx\src\Geckofx-Wpf\obj\Debug\Geckofx-Wpf.csproj.CoreCompileInputs.cache
+C:\Users\Admin\source\repos\GeckoFx\src\Geckofx-Wpf\bin\Debug\Geckofx-Core.dll.config
+C:\Users\Admin\source\repos\GeckoFx\src\Geckofx-Wpf\bin\Debug\Geckofx-Wpf.dll
+C:\Users\Admin\source\repos\GeckoFx\src\Geckofx-Wpf\bin\Debug\Geckofx-Wpf.pdb
+C:\Users\Admin\source\repos\GeckoFx\src\Geckofx-Wpf\bin\Debug\Geckofx-Core.dll
+C:\Users\Admin\source\repos\GeckoFx\src\Geckofx-Wpf\bin\Debug\Geckofx-Core.pdb
+C:\Users\Admin\source\repos\GeckoFx\src\Geckofx-Wpf\obj\Debug\Geckofx-Wpf.csproj.CopyComplete
+C:\Users\Admin\source\repos\GeckoFx\src\Geckofx-Wpf\obj\Debug\Geckofx-Wpf.dll
+C:\Users\Admin\source\repos\GeckoFx\src\Geckofx-Wpf\obj\Debug\Geckofx-Wpf.pdb
