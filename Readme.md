@@ -6,7 +6,7 @@ GeckoFx45 RnD
 ![Shot1](images/shot1.png)
 
 ## Building the project
-My fork of [Mozilla's "GeckoFX-45" solution](https://github.com/MicrosoftBandDev/companion-app), 
+My fork of [nutellarlz's "GeckoFX-45" solution](https://github.com/nutellarlz/geckofx-45.0), 
 which is still in the preview stages... 
 
 Once you have the development environment set up, you're ready to clone the repo.
@@ -18,11 +18,11 @@ You need Visual Studio 2022 *Preview* to assemble (build) my solution.
 
 ## Status
 - only "libraries" (firefox "wrappers") compiled
-- no exe, no uwp, etc.
+- no exe yet, no uwp :)
 
 ## References
-https://github.com/nutellarlz Josiah Horton aka nutellarlz
-https://github.com/nutellarlz/geckofx-45.0 Project GeckoFx-45.0
+- https://github.com/nutellarlz Josiah Horton aka nutellarlz
+- https://github.com/nutellarlz/geckofx-45.0 Project GeckoFx-45.0
 
 ## ..
 AS IS. No support. DIY
